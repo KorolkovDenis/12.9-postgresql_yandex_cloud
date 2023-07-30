@@ -125,5 +125,5 @@ select count(*) from pg_stat_replication;
 
 
 
-[Cсылка на google docs по «Резервное копирование баз данных»](https://docs.google.com/document/d/1tT7QFVqyYvcGOqLPuzfkn1oabXEZR2cr/edit?usp=sharing&ouid=104113173630640462528&rtpof=true&sd=true)
+[Cсылка на google docs по «Базы данных в облаке»](https://docs.google.com/document/d/1tT7QFVqyYvcGOqLPuzfkn1oabXEZR2cr/edit?usp=sharing&ouid=104113173630640462528&rtpof=true&sd=true)
 
