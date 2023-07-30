@@ -72,11 +72,11 @@ psql "host=rc1a-efhebgdyfp3vnq6s.mdb.yandexcloud.net,rc1b-tkmdbfmehw72mvs7.mdb.y
     user=korokov \
     target_session_attrs=read-write"
 ```
-![screen1]()
+![screen1](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen1.jpg)
 ```
 SELECT version();
 ```
-![screen2]()
+![screen2](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen2.jpg)
 
 Проверьте, что подключение прошло к master-узлу.
 ```
@@ -86,27 +86,27 @@ select case when pg_is_in_recovery() then 'REPLICA' else 'MASTER' end;
 ```
 select count(*) from pg_stat_replication;
 ```
-![screen3]()
+![screen3](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen3.jpg)
 
 Создам таблицу и добавлю несколько строк в нее:
 
-![screen4]()
+![screen4](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen4.jpg)
 
 Теперь поработаю с Репликой. Для этого из команды подключения удалю атрибут target_session_attrs и в параметре атрибут host передаю только имя хоста-реплики. 
 
-![screen5]()
+![screen5](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen5.jpg)
 
 Это инфа по созданным у нас БД и таблицам:
 
-![screen6]()
+![screen6](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen6.jpg)
 
 Если что то пошло не так, шде то опечатка, как у меня в логине ))), то можно скопировать весь скрипт для подключения с самого кластера тут:
 
-![screen7]()
+![screen7](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen7.jpg)
 
 Жмем подключиться и копируем:
 
-![screen8]()
+![screen8](https://github.com/KorolkovDenis/12.9-postgresql_yandex_cloud/blob/main/screenshots/screen8.jpg)
 
 
 ### Задание 2*
@@ -125,5 +125,5 @@ select count(*) from pg_stat_replication;
 
 
 
-[Cсылка на google docs по «Резервное копирование баз данных»]()
+[Cсылка на google docs по «Резервное копирование баз данных»](https://docs.google.com/document/d/1tT7QFVqyYvcGOqLPuzfkn1oabXEZR2cr/edit?usp=sharing&ouid=104113173630640462528&rtpof=true&sd=true)
 
